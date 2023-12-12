@@ -1,0 +1,91 @@
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.unsplash.com/photo-1488554378835-f7acf46e6c98?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+
+.container{
+    background-color: #ffffff1a;
+    backdrop-filter: blur(10px);
+    height: 80%;
+    width: 70%;
+    padding: 5rem;
+    border-radius: 1rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .row-1{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container .row-1 input{
+    height: 2rem;
+    width: 5rem;
+    background-color: #4f4f4f4f;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 700;
+}
+
+.container .row-2{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .container .row-2 button{
+    background-color: #ffffffbf;
+    height: 2.5rem;
+    width: 15rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.container .row-2 button:hover{
+    background-color: #fff;
+} */
+
+.container .row-2 a{
+    background-color: #ffffffbf;
+    height: 2.5rem;
+    width: 15rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.5s;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .row-2 a:hover{
+    background: none;
+    border: 2px solid #fff;
+    box-shadow: 5px 5px #fff;
+    color: #fff;
+} 

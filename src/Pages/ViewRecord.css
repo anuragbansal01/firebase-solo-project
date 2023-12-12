@@ -1,0 +1,130 @@
+/* ViewRecord.css */
+.form-page-body{
+  background-image: url(https://images.unsplash.com/photo-1698948948505-dd31a7cbe691?q=80&w=1791&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  min-height: 100vh;
+  height: auto;
+  width: 100vw;
+  padding: 2rem 2rem;
+}
+
+.form-body {
+  width: auto;
+  background-color: #ffffff1a;
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-body h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.form-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.form-body thead {
+  background-color: #222;
+  color: #fff;
+}
+
+.form-body th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd; /* Add cell border */
+}
+
+.form-body tr{
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.form-body tbody tr:hover {
+  background-color: #00000028;
+}
+
+.form-body td {
+  word-wrap: break-word;
+}
+
+.form-body button{
+  width: auto;
+}
+
+
+/* Add some responsiveness for smaller screens */
+@media screen and (max-width: 600px) {
+  table {
+    overflow-x: auto;
+    display: block;
+  }
+
+  thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #ddd; /* Add cell border */
+    border-right: 1px solid #ddd; /* Add cell border */
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /* Add some spacing between rows for better readability */
+  tr {
+    margin-bottom: 10px;
+  }
+}
+
+td button{
+  background: none;
+  border: 2px solid #fff;
+  transition: all 0.3s;
+}
+
+td .edit-btn:hover{
+  background-color: rgba(0, 79, 128, 0.553);
+  border: 2px solid transparent;
+}
+
+td .delete-btn:hover{
+  background-color: crimson;
+  border: 2px solid transparent;
+}
+
+.form-page-body .back-btn{
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  background: #0000009e;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.form-page-body .back-btn:hover{
+  background-color: #222;
+}
+
